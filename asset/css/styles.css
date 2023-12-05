@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    height: 8000px;
+    background-color: white;
+    font-family: 'Roboto Slab', serif;
+}
+a{
+    color: white;
+}
+
+.contain{
+    background-color: #222223;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    
+}
+
+#logoEntreprise{
+    width: 481px;
+}
+
+.containLogo{
+    width: 100%;
+}
+#ubisoftLogo{
+    width: 65px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    left: 24.5%;
+    top: 5%;
+    transform-origin: center;
+    animation: 1s cubic-bezier(0.77, 0.07, 0.2, 1.27) tourner;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    transition: .2s;
+}
+.logo:hover{
+    cursor: pointer;;
+ }
+.logo:hover #ubisoftLogo{
+    animation: tourner 5s cubic-bezier(0.77, 0.07, 0.2, 1.27) infinite;
+ }
+.logo:active #ubisoftLogo{
+   width: 80px;
+}
+.textNav{
+    font-size: 25px;
+    text-underline-offset:10px;
+    text-decoration-color: white;
+    transition: .5s;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+.textNav:hover{
+    text-underline-offset: 0px;
+    background-color: white;
+    color: #222223;
+}
+#profil{
+    border: 2px white solid;
+    padding: 5px 10px;
+    border-radius: 100%;
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(0deg);
+    top: 43px;
+    right: 0;
+    transition: .5s;
+    transform-origin: center;
+    position: fixed;
+}
+#profil:hover{
+    transform: translate(-50%,-50%) rotate(360deg);
+    color: #222223;
+    background-color: white;
+}
+
+@keyframes tourner{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
