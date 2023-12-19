@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
         <link rel="stylesheet" href="asset/css/load.css">
-        <link rel="stylesheet" href="asset/css/home.css">
+        <link rel="stylesheet" href="asset/css/location.css">
         <link rel="stylesheet" href="asset/css/navBar.css">
         <link rel="stylesheet" href="asset/css/policeEcriture.css">
         <title>Ubivoit</title>
@@ -18,8 +18,8 @@
         <header>
                 <ul id="nav">
                     <li><img src="asset/img/image 7.png"></li>
-                    <li><a href="#" id="selected">Information</a></li>
-                    <li><a href="#" class="textNav">Location et prêt</a></li>
+                    <li><a href="#" >Information</a></li>
+                    <li><a href="#" id="selected"class="textNav">Location et prêt</a></li>
                     <li><a href="#" class="textNav">Nous contacter</a></li>
                     <li><a href="login.html" class="profilButton"><i class="fa-regular fa-user"></i></a></li>
                 </ul>
@@ -27,11 +27,95 @@
             <details>
                 <summary><img src="asset/img/image 7.png"><a href="login.html" class="profilButton"><i class="fa-regular fa-user"></i></a></summary>
                 <ul>
-                    <li><a href="#" id="selected">Information</a></li>
-                    <li><a href="#" class="textNav">Location et prêt</a></li>
+                    <li><a href="#" >Information</a></li>
+                    <li><a href="#" id="selected" class="textNav">Location et prêt</a></li>
                     <li><a href="#" class="textNav">Nous contacter</a></li>
                 </ul>
             </details>
         </header>
+        <main>
+            <section id="section-location-pret" >
+                <h2>Location et prêt</h2>
+                <div class="container">
+                    <div>
+                        <img src="asset/img/Trotinette_Velo.png.webp" alt="image location et prêt">
+                    </div>
+                    <div>
+                        <form method="post" action="index.html" class="blackBg">
+                            <div>
+                                <input type="text" placeholder="Nom et prénom">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Adrese mail">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Adresse complète">
+                            </div>
+                            <div class="whiteBg containListe">
+                                <p>Cochez une case</p>
+                                <div>
+                                    <input type="radio" name="liste-location" id="voiture">
+                                    <label for="voiture">Voiture électrique</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="liste-location" id="trottinette">
+                                    <label for="trottinette">Trottinette électrique</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="liste-location" id="velo">
+                                    <label for="velo">Vélo électrique</label>
+                                </div>
+                            </div>
+                            <input type="submit" value="Envoyer" class="whiteBg">
+                        </form>
+                    </div>
+                </div>
+                <p>Après avoir complété le formulaire, vous serez recontacté pour bénéficier de votre service</p>
+            </section>
+
+            <section id="section-covoiturage" class="blackBg" style="height: 100%;">
+                <h2>Covoiturage</h2>
+                <div class="container">
+                    <div>
+                        <form method="post" action="index.html" class="whiteBg">
+                            <div>
+                                <input type="text" placeholder="Nom et prénom" class="blackBg">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Adresse mail" class="blackBg">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Adresse complète" class="blackBg">
+                            </div>
+                            <div class="blackBg containListe">
+                                <p>Cochez un case</p>
+                                <div>
+                                    <input type="radio" name="liste-covoiturage" id="conducteur">
+                                    <label for="conducteur">Conducteur</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="liste-covoiturage" id="passager">
+                                    <label for="passager">Recherche conducteur</label>
+                                </div>
+                            </div>
+                            <input type="submit" value="Envoyer" class="blackBg">
+                        </form>
+                    </div>
+                    <div>
+                        <img src="asset/img/Logo_Covoiturage1.png.webp" alt="image de Covoiturage">
+                    </div>
+                </div>
+                <p>Après avoir complété le formulaire, vous serez recontacté pour plus d’informations et vous serez mis en relation avec un collègue</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Ubivoit ©, Fait par les incroyables, les super bg Thomas, Lorenzo, Nathan</p>
+        </footer>
+
+        <div class="pageChargement">
+            <div class="containLogo"><img src="asset/img/Ubisoft.png"></div>
+            <div class="containLoad"><div class="load"></div></div>
+        </div>
     </body>
 </html>
