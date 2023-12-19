@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin-top: 150px;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+p{
+    text-align: center;
+}
+.blackBg{
+    background-color: #222223;
+    color: white;
+}
+.whiteBg{
+    background-color: white;
+    color: #222223;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    font-size: 25px;
+    padding:10px;
+    width: 500px;
+}
+.containListe{
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 25px;
+    padding: 10px;
+    width: 300px;
+}
+form input[type="text"], form input[type="email"]{
+    width: 200px;
+    padding: 10px 15px; 
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    transition: .5s;
+}
+form input[type="text"]:focus, form input[type="email"]:focus{
+    width: 250px;
+}
+form input[type="submit"]{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 150px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    transition: .5s;
+    border: 2px solid transparent;
+}
+form input[type="submit"].whiteBg:hover{
+    background-color: #222223;
+    color: white;
+    border-color:white;
+}
+form input[type="submit"].blackBg:hover{
+    background-color: white;
+    color: #222223;
+    border-color:#222223;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+section img{
+    width: 420px;
+    height: 420px;
+    border-radius: 25px;
+}
