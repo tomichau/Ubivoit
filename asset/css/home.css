@@ -38,19 +38,21 @@ section{
     width: 80%;
 }
 .p div p{
-    font-size:  clamp(10px, 2vw, 20px);
+    font-size:  clamp(5px, 2vw, 20px);
 }
 .content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    align-items: center;
     width: 70%;
 }
 section img{
-    width: 400px;
+    width: 50vw;
     border-radius: 25px;
     border: .5vw solid #222223;
+   
 }
 .bgBlack img{
     border-color: white;
@@ -61,5 +63,6 @@ section img{
     }
     .img img{
         width: 100%;
+        min-width: 150px;
     }
 }
