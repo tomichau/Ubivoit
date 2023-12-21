@@ -105,5 +105,19 @@ form p a:hover{
     padding-bottom: 4px;
 }
 footer{
+    background-color: #222223;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
+    height: 60px;
+    font-size: clamp(10px, 1vw, 20px);
+    position: relative;
+}
+footer img{
+    width: 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50px;
 }
