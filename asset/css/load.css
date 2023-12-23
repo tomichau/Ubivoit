@@ -6,7 +6,6 @@
     visibility: visible;
     animation: 1.5s hidePage;
     animation-fill-mode: forwards;
-    z-index: 390;
 }
 .pageChargement img{
     position: absolute;
